@@ -4,8 +4,9 @@ const cors = require('cors')
 require('dotenv').config();
 const helmet = require('helmet');
 const swaggerUi = require('swagger-ui-express')
-const yaml = require('yamljs')
-const swaggerDocs = yaml.load('swagger.yaml')
+const yaml = require('yaml');//require('yamljs')
+const fs = require('fs');
+const swaggerDocs = yaml.safeLoad(fs.readFileSync('swagger.yaml', 'utf8'));
 const app = express()
 app.use(cors())
 app.use(express.json())

@@ -1,3 +1,10 @@
 node_modules
 
+yarn.lock
+.yarnrc.yml
+
+.yarn
+
+yarn-4.11.0.cjs
+
 !images/.gitkeep

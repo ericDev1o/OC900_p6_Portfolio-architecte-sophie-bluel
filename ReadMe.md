@@ -2,7 +2,7 @@
 
 Code du projet 6 d'intégrateur web.
 
-## Information pour le lancer le code
+## Information pour lancer le code
 
  - Lancer le backend depuis votre terminal en suivant les instruction du fichier ReadMe.
  - Si vous désirez afficher le code du backend et du frontend, faites le dans 2 instances de VSCode différentes pour éviter tout problème
@@ -10,7 +10,7 @@ Code du projet 6 d'intégrateur web.
 ### comment?
 yarn start
 si vous 
-#### 1/2 veillez à ce que les paquets soient à jour et puis ...
+#### backend 1/2 veillez à ce que les paquets soient à jour et puis ...
  eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel$ cd Backend/
 eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/Backend$ ls
 ReadMe.md  config       database.sqlite  middlewares  package.json  server.js
@@ -247,7 +247,7 @@ added 12 packages, removed 91 packages, changed 31 packages, and audited 269 pac
 found 0 vulnerabilities
 eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/Backend$ 
 
-#### 2/2 et que vous résolvez
+#### backend 2/2 et que vous résolvez
 eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/Backend$ yarn start
 Internal Error: dwf-projet6-backend@workspace:.: This package doesn't seem to be present in your lockfile; run "yarn install" to update the lockfile
     at jR.getCandidates (/home/eric/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/Backend/.yarn/releases/yarn-4.11.0.cjs:204:4607)
@@ -261,3 +261,17 @@ Internal Error: dwf-projet6-backend@workspace:.: This package doesn't seem to be
     at async ki.startProgressPromise (/home/eric/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/Backend/.yarn/releases/yarn-4.11.0.cjs:140:129679)
     at async t.resolveEverything (/home/eric/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/Backend/.yarn/releases/yarn-4.11.0.cjs:209:7138)
 eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/Backend$ 
+
+#### 1/2 frontend la même chose
+yarn peut rester obsolète pour ce projet.
+Pour information, les modifications dans ../Backend ont fait que:
+eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel$ cd FrontEnd/
+eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/FrontEnd$ node -v
+v20.19.4
+eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/FrontEnd$ nvs use 25
+PATH += ~/.nvs/node/25.2.0/x64/bin
+eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/FrontEnd$ yarn -v
+1.22.22
+eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/FrontEnd$ corepack yarn -v
+4.11.0
+eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p6_Portfolio-architecte-sophie-bluel/FrontEnd$ 
